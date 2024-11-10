@@ -1,23 +1,30 @@
 .navbar {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 60px;
-    background-color: #333;
-    color: white;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    border-top: 1px solid #444;
-  }
-  
-  .navbar a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-  }
-  
-  .navbar a:hover {
-    text-decoration: underline;
-  }
-  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  background-color: lightblue;
+  /* background-image: url('/public/imgs/navbar_bg.jpg'); /* Path to image in public */
+  /* background-size: cover;  /* Ensures the image covers the entire navbar */
+  /* background-position: center; /* Centers the background image */
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #444;
+}
+
+.navbar a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-icon {
+  width: 30px; /* Set the width of the icon */
+  height: 30px; /* Set the height of the icon */
+}
+
+.navbar a:hover {
+  opacity: 0.8; /* Optional: adds a hover effect */
+}

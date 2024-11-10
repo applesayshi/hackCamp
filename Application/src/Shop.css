@@ -1,0 +1,32 @@
+/* Ensure body and html take full height */
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  /* Shop container will take the full height minus the navbar */
+  .page-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;  /* Fill the entire available space */
+    margin-bottom: 60px;  /* To leave space for the navbar */
+  }
+  
+  /* Top container (50% of the height) */
+  .top-container {
+    flex: 0 0 50%;  /* Takes 50% of the available height */
+    background-color: lightblue;  /* For demo purposes */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Bottom container (50% of the height) */
+  .bottom-container {
+    flex: 0 0 50%;  /* Takes 50% of the available height */
+    background-color: lightgreen;  /* For demo purposes */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
