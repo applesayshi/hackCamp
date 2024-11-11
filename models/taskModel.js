@@ -26,8 +26,8 @@ Task.prototype.setRewards = function (difficulty) {
   }
 };
 
-Task.prototype.getValues = function () {
-  return [this.id, this.descr, this.difficulty, this.coinValue, this.xpValue];
+Task.fromData = function (data) {
+  return new Task(data.id, data.descr, data.difficulty, data.coinValue, data.xpValue);
 };
 
 module.exports = Task;
