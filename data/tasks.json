@@ -1,0 +1,25 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "difficulty": "easy",
+      "description": "eat water",
+      "xp": 100,
+      "coins": 50
+    },
+    {
+      "id": 2,
+      "difficulty": "easy",
+      "description": "code sleep",
+      "xp": 500,
+      "coins": 100
+    },
+    {
+      "id": 3,
+      "difficulty": "easy",
+      "description": "drink program",
+      "xp": 50,
+      "coins": 20
+    }
+  ]
+}
