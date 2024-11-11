@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Im
 import './App.css';
 
 // Import the pages (or components)
+import Coin from './Coin';
 import Home from './Home';
 import Shop from './Shop';
 import Inventory from './Inventory';
@@ -21,6 +22,9 @@ function App() {
         </div>
         <Navbar /> {/* Always show the Navbar at the bottom */}
       </div>
+        <div>
+          <Coin /> {/* Always show the amount of coins at the top right */}
+        </div>
     </Router>
   );
 }
