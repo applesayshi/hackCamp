@@ -1,11 +1,11 @@
 const Task = require("../models/taskModel.js");
 const User = require("../models/userModel.js");
-const { readFile, writeFile } = require("jsonUtils.js");
+const { readFile, writeFile } = require("./jsonUtils.js");
 
 const getTasks = (res, req) => {
   const taskData = readFile("../data/tasks.json");
   if (!taskData || !taskData.tasks) {
-    throw new Error("No tasks found");
+    console.error("No tasks found");
   }
   res.json(taskData.tasks);
 };
@@ -15,7 +15,7 @@ const addTask = (req, res) => {
 
   const taskData = readFile("../data/tasks.json");
   if (!taskData) {
-    throw new Error("Error reading tasks data");
+    console.error("Error reading tasks data");
   }
 
   const newId = 1;
@@ -47,7 +47,7 @@ const completeTask = (req, res) => {
   const task = tasksData.tasks.find((task) => task.id === taskId);
 
   if (!user || !task) {
-    throw new Error("Error retreiving task or user");
+    console.error("Error retreiving task or user");
   }
 
   const currentUser = User.fromData(user);
