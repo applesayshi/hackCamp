@@ -5,7 +5,12 @@ function Home() {
   return (
     <div className="page-container">
       <div className="top-container">
-        <h1>Blob Godot Integration</h1>
+      <iframe
+          src="/newGame/game.html"
+          title="Godot Game"
+          width="100%"
+          height="100%"
+        />
         {}
       </div>
       <div className="bottom-container">

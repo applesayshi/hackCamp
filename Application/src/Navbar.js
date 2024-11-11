@@ -5,9 +5,9 @@ import './Navbar.css';
 function Navbar() {
   return (
     <div className="navbar">
-      <Link to="/Shop">Shop</Link>
-      <Link to="/">Home</Link>
-      <Link to="/Inventory">Inventory</Link>
+      <Link to="/Shop"><img src="/imgs/nav_shop.png"></img></Link>
+      <Link to="/"><img src="/imgs/nav_home.png"></img></Link>
+      <Link to="/Inventory"><img src="/imgs/nav_inventory.png"></img></Link>
     </div>
   );
 }
