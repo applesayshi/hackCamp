@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Use Link for navigation without reloading the page
-import './Coin.css';
+import './Coins.css';
 
-class Coin {
+class Coins {
   constructor() {
     this.coins = 0;
   }
@@ -16,4 +16,4 @@ class Coin {
   }
 }
 
-export default Coin;
+export default Coins;
