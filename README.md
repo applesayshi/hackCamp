@@ -1,1 +1,1 @@
-# Welcome to Grind n Slime!
+# Main branch
